@@ -1,6 +1,6 @@
 ---
 name: Ahmad Raza
-avatar: /static/images/avatar.png
+avatar: /static/images/ahmadRaza365.jpg
 occupation: MERN Stack Developer
 company: AhmadRaza365
 email: ahmadraza365pro@gmail.com
