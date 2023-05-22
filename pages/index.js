@@ -42,7 +42,7 @@ export default function Home({ posts }) {
                 imgSrc={images ? images[0] : '/static/images/time-machine.jpg'}
                 href={`/blog/${slug}`}
                 showReadMore={true}
-                date
+                date={date}
               />
             )
           })}
