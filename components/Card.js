@@ -1,8 +1,12 @@
+import formatDate from '@/lib/utils/formatDate'
 import Image from './Image'
 import Link from './Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
-  <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
+const Card = ({ title, description, imgSrc, href, showReadMore, date }) => (
+  <article
+    className="md p-4 transition-all duration-200 ease-in-out hover:scale-[1.03] md:w-1/2"
+    style={{ maxWidth: '544px' }}
+  >
     <div
       className={`${
         imgSrc && 'h-full'
@@ -38,6 +42,12 @@ const Card = ({ title, description, imgSrc, href }) => (
             title
           )}
         </h2>
+        <dl>
+          <dt className="sr-only">Published on</dt>
+          <dd className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+            <time dateTime={date}>{formatDate(date)}</time>
+          </dd>
+        </dl>
         <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
         {href && (
           <Link
@@ -45,12 +55,12 @@ const Card = ({ title, description, imgSrc, href }) => (
             className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label={`Link to ${title}`}
           >
-            Learn more &rarr;
+            {showReadMore ? 'Read more' : 'Learn more'} &rarr;
           </Link>
         )}
       </div>
     </div>
-  </div>
+  </article>
 )
 
 export default Card
