@@ -11,11 +11,19 @@ import siteMetadata from '@/data/siteMetadata'
 import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
+import OneSignal from 'react-onesignal'
+import { useEffect } from 'react'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    OneSignal.init({
+      appId: process.env.NEXT_PUBLIC_ONE_SIGNAL_APP_ID,
+    })
+  }, [])
+
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
