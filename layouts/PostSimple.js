@@ -31,7 +31,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </div>
               </dl>
               <div>
-                <PageTitle>{title}11</PageTitle>
+                <PageTitle>{title}</PageTitle>
               </div>
             </div>
           </header>

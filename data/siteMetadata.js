@@ -6,7 +6,7 @@ const siteMetadata = {
     'AI Tools Today is a blog website that provides information on the latest artificial intelligence tools. We cover a wide range of topics, from machine learning to natural language processing. Our goal is to help you learn about AI tools and how they can be used to improve your business or life.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://today-ai-tools.vercel.app',
+  siteUrl: 'https://todayaitools.com',
   siteRepo: 'https://github.com/AhmadRaza365/TodayAiToolsBlog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
