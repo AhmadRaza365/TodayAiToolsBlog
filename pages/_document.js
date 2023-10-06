@@ -23,6 +23,7 @@ class MyDocument extends Document {
           <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
           <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+          <meta name="impact-site-verification" value="b40675b6-fce8-4d5d-9599-cbd34d9f0443" />
         </Head>
         <body className="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
           <Main />
